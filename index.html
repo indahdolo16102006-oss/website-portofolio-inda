@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Portofolio Inda Dolo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Portofolio</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#project">Project</a>
+        <a href="#media">Media</a>
+        <a href="#info">Informasi</a>
+        <a href="#kontak">Kontak</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <div>
+        <h1>Halo, Saya <span>Inda Dolo</span></h1>
+        <p>Saya Seorang <span class="typing"></span></p>
+    </div>
+    <img src="profil.jpg">
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+    <h2>Profile</h2>
+    <div class="profile-modern">
+        <div class="profile-img">
+            <img src="profil.jpg" alt="Foto Profil">
+        </div>
+        <div class="profile-info">
+            <h3>Inda Dolo</h3>
+            <p class="role">Mahasiswa Sistem Informasi</p>
+            <div class="profile-data">
+                <p><i class="fas fa-id-card"></i> NIM : 251011701266</p>
+                <p><i class="fas fa-laptop-code"></i> Web Developer Pemula</p>
+                <p><i class="fas fa-university"></i> Program Studi Sistem Informasi</p>
+            </div>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>C++</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="project" class="reveal">
+    <h2>Project</h2>
+    <p class="project-desc">
+        Berikut beberapa project yang telah saya kerjakan sebagai mahasiswa
+        Sistem Informasi dengan fokus teknologi dan bisnis.
+    </p>
+
+    <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <img src="1.png" alt="Project 1">
+            <div class="project-overlay">
+                <h3>Website Bisnis</h3>
+                <p>Website company profile</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <img src="2.png" alt="Project 2">
+            <div class="project-overlay">
+                <h3>Sistem Informasi</h3>
+                <p>Manajemen data</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <img src="3.png" alt="Project 3">
+            <div class="project-overlay">
+                <h3>Landing Page</h3>
+                <p>Promosi produk</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+            <img src="4.png" alt="Project 4">
+            <div class="project-overlay">
+                <h3>UI Design</h3>
+                <p>Desain aplikasi</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+            <img src="5.png" alt="Project 5">
+            <div class="project-overlay">
+                <h3>E-Commerce</h3>
+                <p>Toko online</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card">
+            <img src="6.png" alt="Project 6">
+            <div class="project-overlay">
+                <h3>Dashboard</h3>
+                <p>Analisis data</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 7 -->
+        <div class="project-card">
+            <img src="7.png" alt="Project 7">
+            <div class="project-overlay">
+                <h3>Website Edukasi</h3>
+                <p>Media pembelajaran</p>
+            </div>
+        </div>
+
+        <!-- PROJECT 8 -->
+        <div class="project-card">
+            <img src="8.png" alt="Project 8">
+            <div class="project-overlay">
+                <h3>Portfolio</h3>
+                <p>Personal branding</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- MEDIA -->
+<section id="media" class="reveal">
+    <h2>Media</h2>
+
+    <!-- FILTER -->
+    <div class="media-filter">
+        <button onclick="filterMedia('all')">Semua</button>
+        <button onclick="filterMedia('foto')">Foto</button>
+        <button onclick="filterMedia('video')">Video</button>
+        <button onclick="filterMedia('musik')">Musik</button>
+    </div>
+
+    <div class="media-grid">
+
+        <!-- FOTO -->
+        <div class="media-card media-item foto">
+            <h3>📸 Foto</h3>
+            <div class="media-gallery">
+                <img src="media3.jpg">
+                <img src="media1.jpg">
+                <img src="media2.jpg">
+            </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div class="media-card media-item video">
+            <h3>🎥 Video</h3>
+            <video controls>
+                <source src="vidio.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- MUSIK -->
+        <div class="media-card media-item musik">
+            <h3>🎵 Musik</h3>
+            <audio id="bgMusic" controls>
+                <source src="lagu.mp4" type="audio/mp3">
+            </audio>
+        </div>
+
+    </div>
+</section>
+
+<!-- INFORMASI -->
+<section id="info" class="reveal">
+    <h2>Informasi</h2>
+
+    <div class="info-container">
+
+        <div class="info-card">
+            <h3>👤 Tentang Saya</h3>
+            <p>
+                Saya merupakan mahasiswa jurusan Sistem Informasi yang memiliki
+                ketertarikan dalam dunia bisnis dan teknologi digital. Saya fokus
+                mengembangkan sistem informasi yang mampu mendukung proses bisnis
+                secara efektif dan efisien.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>💻 Teknologi</h3>
+            <p>
+                Website ini dibangun menggunakan HTML, CSS, dan JavaScript
+                tanpa framework tambahan untuk melatih dasar pemrograman web.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>🎯 Tujuan</h3>
+            <p>
+                Portofolio ini dibuat sebagai media pembelajaran,
+                dokumentasi karya, dan pengembangan skill di dunia IT.
+            </p>
+        </div>
+
+    </div>
+
+    <button class="info-btn" onclick="showInfo()">Klik Info Website</button>
+    <p id="infoText"></p>
+</section>
+
+<section id="kontak" class="reveal">
+    <h2>Hubungi Kami</h2>
+    <p class="kontak-desc">
+        Silakan hubungi saya untuk kerja sama, diskusi proyek,
+        atau peluang bisnis berbasis teknologi.
+    </p>
+
+    <div class="kontak-container">
+
+        <a href="https://instagram.com/indol.0" target="_blank" class="kontak-card">
+            <span class="icon">📷</span>
+            <h3>Instagram</h3>
+            <p>@indol.0</p>
+        </a>
+
+        <a href="https://tiktok.com/@indadolo" target="_blank" class="kontak-card">
+            <span class="icon">🎵</span>
+            <h3>TikTok</h3>
+            <p>@indadolo</p>
+        </a>
+
+        <a href="https://github.com/indahdolo16102006-oss" target="_blank" class="kontak-card">
+            <span class="icon">💻</span>
+            <h3>GitHub</h3>
+            <p>github.com/inda dolo</p>
+        </a>
+
+        </div>
+
+        <!-- FORM KONTAK -->
+        <form class="kontak-form" onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email Aktif" required>
+            <textarea placeholder="Tulis pesan Anda..." required></textarea>
+            <button type="submit">Kirim Pesan</button>
+            <p id="formStatus"></p>
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    © 2025 Inda Dolo
+</footer>
+
+<script>
+const text = ["Web Developer", "Mahasiswa", "Freelance"];
+let i = 0, j = 0;
+
+function typing(){
+    if(j < text[i].length){
+        document.querySelector(".typing").innerHTML += text[i][j];
+        j++;
+        setTimeout(typing, 100);
+    }else{
+        setTimeout(erase, 1500);
+    }
+}
+
+function erase(){
+    if(j > 0){
+        document.querySelector(".typing").innerHTML =
+        text[i].slice(0, --j);
+        setTimeout(erase, 50);
+    }else{
+        i = (i + 1) % text.length;
+        setTimeout(typing, 200);
+    }
+}
+typing();
+
+function showInfo(){
+    document.getElementById("infoText").innerText =
+    "Website ini dibuat menggunakan HTML, CSS, dan JavaScript.";
+}
+
+function filterMedia(type){
+    const items = document.querySelectorAll(".media-item");
+    items.forEach(item => {
+        if(type === "all" || item.classList.contains(type)){
+            item.style.display = "block";
+        }else{
+            item.style.display = "none";
+        }
+    });
+}
+
+document.body.addEventListener("click", function(){
+    const music = document.getElementById("bgMusic");
+    if(music && music.paused){
+        music.play().catch(()=>{});
+    }
+}, { once: true });
+
+</script>
+</html>

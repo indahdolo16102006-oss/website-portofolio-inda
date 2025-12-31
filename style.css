@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#2b1055,#7597de);
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+}
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+.logo span{color:#00ffd5}
+
+section{
+    padding:60px 40px;
+}
+
+#home{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#home img{
+    width:260px;
+    border-radius:50%;
+    border:5px solid #00ffd5;
+}
+span{color:#00ffd5}
+
+.social a{
+    font-size:22px;
+    margin-right:15px;
+    color:rgb(224, 212, 190);
+}
+
+/* PROFILE MODERN */
+.profile-modern{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    background:linear-gradient(135deg, rgba(0,255,213,0.15), rgba(0,0,0,0.5));
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.profile-img img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #00ffd5;
+    box-shadow:0 0 30px #00ffd5;
+}
+
+.profile-info h3{
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+.role{
+    color:#00ffd5;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.profile-data p{
+    margin-bottom:8px;
+}
+
+.profile-data i{
+    color:#00ffd5;
+    margin-right:8px;
+}
+
+.skills{
+    margin-top:20px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#00ffd5;
+    color:black;
+    padding:6px 14px;
+    border-radius:20px;
+    margin:5px 5px 0 0;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* RESPONSIVE PROFILE */
+@media(max-width:768px){
+    .profile-modern{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+//* =====================
+   PROJECT SECTION
+===================== */
+#project{
+    text-align:center;
+}
+
+.project-desc{
+    text-align: center;
+    max-width:700px;
+    margin:10px auto 35px;
+    opacity:0.85;
+}
+
+/* GRID */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.project-card{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(0,255,213,0.15);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.project-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.project-card:hover img{
+    transform:scale(1.1);
+}
+
+/* OVERLAY */
+.project-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:0.3s;
+}
+
+.project-card:hover .project-overlay{
+    opacity:1;
+}
+
+.project-overlay h3{
+    color:#00ffd5;
+    margin-bottom:5px;
+}
+
+.project-overlay p{
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .project-card img{
+        height:180px;
+    }
+}
+/* =====================
+   MEDIA SECTION STYLE
+===================== */
+.media-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* CARD MEDIA */
+.media-card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px rgba(0,255,213,0.15);
+    transition:0.3s;
+}
+
+.media-card:hover{
+    transform:translateY(-8px);
+}
+
+/* =====================
+   FOTO
+===================== */
+.media-gallery{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.media-gallery img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:14px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.media-gallery img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px #00ffd5;
+}
+
+/* =====================
+   VIDEO
+===================== */
+.media-card video{
+    width:100%;
+    max-width:100%;
+    border-radius:16px;
+    margin-top:15px;
+    box-shadow:0 0 25px rgba(0,255,213,0.4);
+}
+
+/* =====================
+   MUSIK
+===================== */
+.media-card audio{
+    width:100%;
+    margin-top:20px;
+    border-radius:30px;
+    outline:none;
+    filter:drop-shadow(0 0 10px rgba(0,255,213,0.6));
+}
+
+/* =====================
+   RESPONSIVE HP
+===================== */
+@media(max-width:768px){
+    .media-gallery img{
+        width:120px;
+        height:120px;
+    }
+
+    .media-card{
+        padding:16px;
+    }
+}
+/* =====================
+   INFORMASI SECTION
+===================== */
+#info{
+    text-align:center;
+}
+
+.info-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+/* CARD INFORMASI */
+.info-card{
+    background:rgba(255,255,255,0.06);
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,255,213,0.15);
+    transition:0.3s ease;
+}
+
+.info-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(0,255,213,0.5);
+}
+
+.info-card h3{
+    margin-bottom:15px;
+    color:#00ffd5;
+}
+
+/* BUTTON INFO */
+.info-btn{
+    margin-top:35px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#00ffd5;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.info-btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* TEXT INFO */
+#infoText{
+    margin-top:20px;
+    font-style:italic;
+    opacity:0.85;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+input,textarea{
+    padding:10px;
+    border-radius:5px;
+    border:none;
+}
+button{
+    background:#00ffd5;
+    border:none;
+    padding:10px;
+    border-radius:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* =====================
+   KONTAK SECTION
+===================== */
+#kontak{
+    text-align:center;
+}
+
+.kontak-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+/* CARD KONTAK */
+.kontak-card{
+    background:rgba(255,255,255,0.06);
+    padding:25px;
+    border-radius:20px;
+    text-decoration:none;
+    color:inherit;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 25px rgba(0,255,213,0.15);
+    transition:0.3s ease;
+}
+
+.kontak-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(0,255,213,0.5);
+}
+
+.kontak-card .icon{
+    font-size:40px;
+    margin-bottom:10px;
+    display:block;
+}
+
+.kontak-card h3{
+    color:#00ffd5;
+    margin-bottom:5px;
+}
+/* ===== KONTAK ===== */
+#kontak {
+    background: linear-gradient(135deg, #243b7d, #3f5efb);
+}
+
+#kontak h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #7fffd4;
+    margin-bottom: 10px;
+}
+
+#kontak p {
+    text-align: center;
+    color: #e0e0e0;
+    margin-bottom: 50px;
+}
+
+.kontak-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.kontak-info,
+.kontak-form {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.kontak-info p {
+    margin: 12px 0;
+    transition: 0.3s;
+}
+
+.kontak-info p:hover {
+    color: #7fffd4;
+    transform: translateX(5px);
+}
+
+.kontak-form input,
+.kontak-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.kontak-form button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #7fffd4, #00ffd5);
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.kontak-form button:hover {
+    box-shadow: 0 10px 25px rgba(0,255,213,0.6);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ===== ANIMASI ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    section {
+        padding: 90px 5%;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .kontak-container {
+        grid-template-columns: 1fr;
+    }
+}
